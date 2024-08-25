@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 // POST method route
-app.post("/bfhl", (req, res) => {
+app.post("api/bfhl", (req, res) => {
   const data = req.body.data;
   // Example processing logic
   const numbers = data.filter((item) => !isNaN(item));
